@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.description   = 'Testing utils for Cable Ready'
   spec.homepage      = 'http://github.com/pdabrowski6/cable-ready-testing'
   spec.license       = 'MIT'
-
+  spec.files         = `git ls-files`.split($/).select { |p| p.match(%r{^lib/}) }
   spec.require_paths = ['lib']
 
   spec.required_ruby_version = '>= 2.4.0'

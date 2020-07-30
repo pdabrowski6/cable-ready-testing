@@ -16,3 +16,11 @@ group :test do
   gem 'cable-ready-testing'
 end
 ```
+
+now load the library for RSpec by editing the file `spec/rails_helper.rb` and loading the gem after initializing the environment with the following line:
+
+```ruby
+require 'cable_ready/testing/rspec'
+```
+
+you are now ready to use the matchers inside your RSpec tests.
