@@ -99,7 +99,7 @@ The following matchers are available:
 * `mutated_style`
 * `mutated_element`
 
-Mentioned above matchers work the same way, you should choose the right one depending on the context. If you are calling `cable_ready["MyChannel"].set_dataset_property` then use `mutated_dataset` matcher, etc. Always chaing them with `.on_channel` and `.with`.
+Mentioned above matchers work the same way, you should choose the right one depending on the context. If you are calling `cable_ready["MyChannel"].set_dataset_property` then use `mutated_dataset` matcher, etc. Always chain them with `.on_channel` and `.with`.
 
 ## 📝 License
 
