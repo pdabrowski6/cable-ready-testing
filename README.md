@@ -87,3 +87,22 @@ RSpec.describe Broadcaster do
   end
 end
 ```
+
+## 📝 Documentation
+
+The following matchers are available:
+
+* `mudated_element`
+* `mutated_attribute`
+* `mutated_css_class`
+* `mutated_dataset`
+* `mutated_style`
+* `mutated_element`
+
+Mentioned above matchers work the same way, you should choose the right one depending on the context. If you are calling `cable_ready["MyChannel"].set_dataset_property` then use `mutated_dataset` matcher, etc. Always chaing them with `.on_channel` and `.with`.
+
+## 📝 License
+
+CableReady testing lib is released under the [MIT License](LICENSE.txt).
+
+
