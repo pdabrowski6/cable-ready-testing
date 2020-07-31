@@ -36,7 +36,7 @@ class Broadcaster
   def call(channel_name, selector)
     cable_ready[channel_name].outer_html(
       selector: selector,
-      html: 'some html'
+      html: 'html'
     )
 
     cable_ready.broadcast
